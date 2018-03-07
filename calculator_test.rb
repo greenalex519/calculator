@@ -3,7 +3,7 @@ require_relative 'calculator'
 
 class CalculatorTest < Test::Unit::TestCase
   def test_add
-    total = add(1,2)
+    total = add(1, 2)
     assert_equal(3, total)
   end
 
@@ -12,4 +12,8 @@ class CalculatorTest < Test::Unit::TestCase
     assert_equal(5, total)
   end
 
+  def test_multiply
+    total = multiply(3, 3)
+    assert_equal(9, total)
+  end
 end
